@@ -14,4 +14,8 @@ public class BavenForTest {
     public static void hello1(String name) {
         System.out.println("hello, " + name);
     }
+
+    public static void hello2(String testName) {
+        System.out.println("nana, " + testName);
+    }
 }
