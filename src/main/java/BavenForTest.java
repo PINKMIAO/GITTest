@@ -22,4 +22,8 @@ public class BavenForTest {
     public static void hello3(String testName) {
         System.out.println("while");
     }
+
+    public static void nihao(Integer number) {
+        System.out.println("IIIIIIIIIIIIIIIIII");
+    }
 }
