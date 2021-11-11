@@ -10,4 +10,8 @@ public class BavenForTest {
     public static void hello() {
         System.out.println("hello, git");
     }
+
+    public static void hello1(String name) {
+        System.out.println("hello, " + name);
+    }
 }
