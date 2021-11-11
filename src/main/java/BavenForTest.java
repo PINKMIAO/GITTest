@@ -18,4 +18,8 @@ public class BavenForTest {
     public static void hello2(String testName) {
         System.out.println("nana, " + testName);
     }
+
+    public static void hello3(String testName) {
+        System.out.println("while");
+    }
 }
