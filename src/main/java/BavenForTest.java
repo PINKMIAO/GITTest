@@ -19,10 +19,6 @@ public class BavenForTest {
         System.out.println("nana, " + testName);
     }
 
-    public static void hello44444(String testName){
-        System.out.println("help!!!");
-    }
-
     public static void hello3(String testName) {
         System.out.println("while");
         System.out.println(1 + 1);
