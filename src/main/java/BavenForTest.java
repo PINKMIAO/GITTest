@@ -23,4 +23,8 @@ public class BavenForTest {
         Integer i = 1;
         String username = "baven";
     }
+
+    public static String testName() {
+        return "String";
+    }
 }
