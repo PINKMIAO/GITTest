@@ -23,22 +23,9 @@ public class BavenForTest {
         System.out.println("nana, " + testName);
     }
 
-    public static void testsetsetset() {
-        Integer i = 1;
-        String username = "baven";
-    }
-
-    public static String testName() {
-        return "String";
-    }
-
     public static void hello3(String testName) {
         System.out.println("while");
         System.out.println(1 + 1);
-    }
-
-    public static void nihao(Integer number) {
-        System.out.println("IIIIIIIIIIIIIIIIII");
     }
 
     public static void lisa(Student student) {
@@ -75,14 +62,16 @@ public class BavenForTest {
             return Optional.ofNullable(student).map(u -> u.getGender()).orElse("Unkown");
         }
          **/
-
-
         // .of 是肯定有值    .ofNullable就不确定方法传进来的到底有没有值
         Optional<Student> aaa = Optional.ofNullable(student);
         System.out.println("optional: " + aaa);
 
         // 取出Student对象，再toString
-        System.out.println(aaa.get().toString());
+        System.out.println(aaa.isPresent());
+        if (aaa.isPresent()) {
+            System.out.println(aaa.get());
+        }
+        aaa.ifPresent(System.out::println);
         // 直接从容器中取出的一致，前提是Student类中有toString
         System.out.println(aaa.orElseThrow(NullPointerException::new));
     }
