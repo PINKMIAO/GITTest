@@ -1,3 +1,5 @@
+package lambdalearning;
+
 /**
  * @author Baven
  * @date 2021/11/18 15:57
@@ -33,7 +35,7 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student{" +
+        return "lambdalearning.Student{" +
                 "username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 ", age=" + age +
