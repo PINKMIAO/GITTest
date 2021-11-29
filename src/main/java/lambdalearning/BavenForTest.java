@@ -1,15 +1,20 @@
 package lambdalearning;
 
 import java.util.*;
+import java.util.concurrent.CountDownLatch;
 
 /**
  * @author Baven
  * @date 2021/11/11 13:52
  */
 public class BavenForTest {
-    public static void main(String[] args) {
-        new BavenForTest().test2();
+    public static void main(String[] args) throws InterruptedException {
+        // new BavenForTest().test2();
+
+        String s = new String("123" + "abc");
+        System.out.println(s);
     }
+
 
     public static void hello() {
         System.out.println("hello, git");
@@ -38,6 +43,7 @@ public class BavenForTest {
         list.forEach(System.out::println);
 
         /**
+         *  链式
          *  list.stream().map(this::book).collect(Collectors.toList()); // 对象类型相同，只是名称不同的替换
          *  大创
          *  Optional.ofNullable(responseEntity.getBody()).orElseThrow(() -> new BusinessException("非法访问"));
@@ -92,4 +98,7 @@ public class BavenForTest {
         IMyBaven<String, String> myBaven = something::endWith;
         System.out.println(myBaven.myBaven("123"));
     }
+
+
+
 }

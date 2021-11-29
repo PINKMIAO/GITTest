@@ -4,6 +4,7 @@ package singleton;
  * lazy loading
  * 也称懒汉式
  * 虽然达到了按需初始化的目的，但却带来线程不安全的问题
+ * @author Baven
  */
 public class Mgr03 {
     private static Mgr03 INSTANCE;

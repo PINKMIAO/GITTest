@@ -1,5 +1,8 @@
 package singleton;
 
+/**
+ * @author Baven
+ */
 public class Main {
 
     public static void main(String[] args) {
