@@ -1,5 +1,8 @@
 package strategy;
 
+/**
+ * @author Baven
+ */
 public class Cat implements Comparable<Cat> {
     int weight, height;
 
@@ -10,13 +13,11 @@ public class Cat implements Comparable<Cat> {
 
     @Override
     public int compareTo(Cat c) {
-        if(this.weight < c.weight) {
+        if (this.weight < c.weight) {
             return -1;
-        }
-        else if(this.weight > c.weight) {
+        } else if (this.weight > c.weight) {
             return 1;
-        }
-        else {
+        } else {
             return 0;
         }
     }

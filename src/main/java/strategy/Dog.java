@@ -1,5 +1,8 @@
 package strategy;
 
+/**
+ * @author Baven
+ */
 public class Dog implements Comparable<Dog> {
     int food;
 
@@ -9,13 +12,11 @@ public class Dog implements Comparable<Dog> {
 
     @Override
     public int compareTo(Dog d) {
-        if(this.food < d.food) {
+        if (this.food < d.food) {
             return -1;
-        }
-        else if(this.food > d.food) {
+        } else if (this.food > d.food) {
             return 1;
-        }
-        else {
+        } else {
             return 0;
         }
     }

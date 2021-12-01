@@ -3,8 +3,7 @@ package strategy;
 import java.util.Arrays;
 
 /**
- * writing tests first!
- * extreme programming
+ * @author Baven
  */
 public class Main {
     public static void main(String[] args) {
@@ -17,14 +16,12 @@ public class Main {
         //Dog[] a = {new Dog(3), new Dog(5), new Dog(1)};
         Sorter<Cat> sorter = new Sorter<>();
 
-        sorter.sort(a, (o1, o2)->{
-            if(o1.weight < o2.weight) {
+        sorter.sort(a, (o1, o2) -> {
+            if (o1.weight < o2.weight) {
                 return -1;
-            }
-            else if (o1.weight>o2.weight) {
+            } else if (o1.weight > o2.weight) {
                 return 1;
-            }
-            else {
+            } else {
                 return 0;
             }
         });

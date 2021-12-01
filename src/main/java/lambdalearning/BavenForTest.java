@@ -9,10 +9,7 @@ import java.util.concurrent.CountDownLatch;
  */
 public class BavenForTest {
     public static void main(String[] args) throws InterruptedException {
-        // new BavenForTest().test2();
-
-        String s = new String("123" + "abc");
-        System.out.println(s);
+        new BavenForTest().test2();
     }
 
 
@@ -98,7 +95,6 @@ public class BavenForTest {
         IMyBaven<String, String> myBaven = something::endWith;
         System.out.println(myBaven.myBaven("123"));
     }
-
 
 
 }

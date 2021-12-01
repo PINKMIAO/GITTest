@@ -5,7 +5,8 @@ package lambdalearning;
  * @date 2021/11/23 10:21
  */
 public class Something {
-    Something() {}
+    Something() {
+    }
 
     Something(String something) {
         System.out.println(something);
@@ -16,7 +17,7 @@ public class Something {
     }
 
     String endWith(String s) {
-        return String.valueOf(s.charAt(s.length()-1));
+        return String.valueOf(s.charAt(s.length() - 1));
     }
 }
 /**
@@ -28,6 +29,7 @@ public class Something {
 
 /**
  * 做 lambda 学习的接口
+ *
  * @param <F> 来源数据
  * @param <T> 返回数据
  */
@@ -38,6 +40,7 @@ interface IConvert<F, T> {
 
 /**
  * 自己随意创建的函数式接口
+ *
  * @param <F>
  * @param <T>
  */
