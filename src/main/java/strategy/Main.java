@@ -4,6 +4,8 @@ import java.util.Arrays;
 
 /**
  * @author Baven
+ *
+ * 起始点为比较，从固定的猫比较变为泛型，再用策略模式更改比较方式
  */
 public class Main {
     public static void main(String[] args) {

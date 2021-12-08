@@ -1,4 +1,4 @@
-package lambdalearning;
+package learn.lambdalearning;
 
 import java.util.Comparator;
 

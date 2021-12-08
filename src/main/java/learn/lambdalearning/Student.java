@@ -1,4 +1,4 @@
-package lambdalearning;
+package learn.lambdalearning;
 
 /**
  * @author Baven
@@ -8,6 +8,13 @@ public class Student {
     private String username;
     private String password;
     private Integer age;
+
+    public Student() {
+    }
+
+    public Student(Integer age) {
+        this.age = age;
+    }
 
     public String getUsername() {
         return username;
@@ -35,7 +42,7 @@ public class Student {
 
     @Override
     public String toString() {
-        return "lambdalearning.Student{" +
+        return "learn.lambdalearning.Student{" +
                 "username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 ", age=" + age +
