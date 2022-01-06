@@ -94,6 +94,4 @@ public class BavenForTest {
         IMyBaven<String, String> myBaven = something::endWith;
         System.out.println(myBaven.myBaven("123"));
     }
-
-
 }

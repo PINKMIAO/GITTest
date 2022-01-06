@@ -9,7 +9,8 @@ public class Thread_interrupt_sleep_and_wait {
         Thread t1 = new Thread(() -> {
             try {
                 Thread.sleep(5000);
-            } catch (InterruptedException e) { // 捕获到异常后，Java会默认的复位标志位
+            } catch (InterruptedException e) {
+                // 捕获到异常后，Java会默认的复位标志位
                 // 对sleep wait join 的线程进行 interrupted 会触发异常
                 // 但主动权还是在我们自己线程这里
                 System.out.println("Thread is interrupted");
